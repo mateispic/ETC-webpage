@@ -13,20 +13,38 @@
             <p class="subtitle">Exploring Cloud Technologies</p>
         </header>
 
-        <section class="description">
+        <nav class="nav-menu">
+            <button class="nav-button active" data-section="description">Descriere</button>
+            <button class="nav-button" data-section="schedule">Orar</button>
+            <button class="nav-button" data-section="evaluation">Evaluare</button>
+        </nav>
+
+        <section id="description" class="content-section active">
             <h2>Despre Curs</h2>
-            <p>
-                Explorarea Tehnologiilor Cloud este un curs dedicat înțelegerii și aplicării 
-                tehnologiilor cloud moderne. Studenții vor învăța conceptele fundamentale ale 
-                cloud computing-ului, arhitecturile distribuite, serviciile cloud (IaaS, PaaS, SaaS), 
-                și vor dobândi experiență practică cu platforme cloud populare. Cursul acoperă atât 
-                aspectele teoretice, cât și aplicațiile practice ale tehnologiilor cloud în contextul 
-                dezvoltării moderne de software.
-            </p>
+            <div class="content-box">
+                <h3>Obiective</h3>
+                <p>
+                    Explorarea Tehnologiilor Cloud este un curs dedicat înțelegerii și aplicării 
+                    tehnologiilor cloud moderne. Studenții vor învăța conceptele fundamentale ale 
+                    cloud computing-ului, arhitecturile distribuite, serviciile cloud (IaaS, PaaS, SaaS), 
+                    și vor dobândi experiență practică cu platforme cloud populare.
+                </p>
+            </div>
+            <div class="content-box">
+                <h3>Conținut</h3>
+                <ul>
+                    <li>Fundamentele cloud computing</li>
+                    <li>Arhitecturi distribuite și microservicii</li>
+                    <li>Servicii cloud: IaaS, PaaS, SaaS</li>
+                    <li>Platforme cloud: AWS, Azure, Google Cloud</li>
+                    <li>Containerizare și orchestrare (Docker, Kubernetes)</li>
+                    <li>Securitate în cloud</li>
+                    <li>Proiecte practice</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="schedule">
-            <h2>Orar</h2>
+        <section id="schedule" class="content-section">
             <div class="schedule-info">
                 <p class="day"><strong>Miercuri</strong></p>
                 
@@ -50,9 +68,48 @@
             </div>
         </section>
 
+        <section id="evaluation" class="content-section">
+            <h2>Evaluare și formule</h2>
+            <div class="content-box">
+                <h3>Componentele Evaluării</h3>
+                <div class="evaluation-grid">
+                    <div class="eval-item">
+                        <h4>Laborator (40%)</h4>
+                        <p>Activități practice și teme de laborator</p>
+                    </div>
+                    <div class="eval-item">
+                        <h4>Proiect (30%)</h4>
+                        <p>Proiect final aplicativ în cloud</p>
+                    </div>
+                    <div class="eval-item">
+                        <h4>Examen (30%)</h4>
+                        <p>Evaluare finală teoretică și practică</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <h3>Formula notei finale</h3>
+                <div class="formula">
+                    <p><strong>Nota finală = 0.4 × Laborator + 0.3 × Proiect + 0.3 × Examen</strong></p>
+                </div>
+                <p class="note"><strong>Notă:</strong> Pentru promovare este necesară nota minimă 5.00 la fiecare componentă.</p>
+            </div>
+            <div class="content-box">
+                <h3>Cerințe</h3>
+                <ul>
+                    <li>Prezență de minimum 50% la laborator</li>
+                    <li>Predarea tuturor temelor de laborator</li>
+                    <li>Susținerea proiectului final</li>
+                    <li>Participarea la examenul final</li>
+                </ul>
+            </div>
+        </section>
+
         <footer>
             <p>&copy; 2026 Pricop Matei-Ioan</p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
